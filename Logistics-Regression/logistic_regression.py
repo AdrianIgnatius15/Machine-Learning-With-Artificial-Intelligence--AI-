@@ -48,7 +48,7 @@ X_train, X_test, y_train, y_test = train_test_split(X_norm, y, test_size=0.2, ra
 
 # Logistic Regression Model
 ## Create an instance of the Logistic Regression model
-LR = LogisticRegression().fit(X_train, y_train);
+LR: LogisticRegression = LogisticRegression().fit(X_train, y_train);
 ## Make predictions on the test set
 yhat = LR.predict(X_test);
 yhat[:10]; # Display first 10 predictions
